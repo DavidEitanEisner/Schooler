@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909075886404",
+    "project_id": "schooler-df19e",
+    "storage_bucket": "schooler-df19e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909075886404:android:bc939dc7f9f230ea22e711",
+        "android_client_info": {
+          "package_name": "com.example.schooler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909075886404-me7snnuaod3fi1qpdpd6m8rbr6qv9fpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiC6cF7NHBQOBrANecxP20M0BBx83rMNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909075886404-me7snnuaod3fi1qpdpd6m8rbr6qv9fpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

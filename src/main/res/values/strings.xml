@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Schooler</string>
+    <string name="todo">TODO</string>
+    <string name="class_name">Class Name</string>
+    <string name="proffesion">Proffesion</string>
+    <string name="subject">Subject</string>
+    <string name="grade">Grade</string>
+    <string name="grades">Grades</string>
+    <string name="my_profile">My Profile</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

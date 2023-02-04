@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon"
+        android:contentDescription="TODO" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSchedule"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSchedule" />
+
+    <TextView
+        android:id="@+id/tvSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivUser"
+        app:layout_constraintStart_toStartOf="@+id/rvSchedule" />
+
+    <TextView
+        android:id="@+id/tvMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Messages"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rvSchedule"
+        app:layout_constraintTop_toBottomOf="@+id/rvSchedule" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvMessages"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessages" />
+
+    <TextView
+        android:id="@+id/tvClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Classes"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rvMessages"
+        app:layout_constraintTop_toBottomOf="@+id/rvMessages" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvClasses"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvClasses"
+        app:layout_constraintTop_toBottomOf="@+id/tvClasses" />
+
+    <TextView
+        android:id="@+id/tvGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/grades"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rvClasses"
+        app:layout_constraintTop_toBottomOf="@+id/rvClasses" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGrades"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvGrades"
+        app:layout_constraintTop_toBottomOf="@+id/tvGrades" />
+
+    <ImageButton
+        android:id="@+id/btnPreviousDay"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSchedule"
+        app:layout_constraintStart_toEndOf="@+id/tvSchedule"
+        app:layout_constraintTop_toTopOf="@+id/tvSchedule"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageButton
+        android:id="@+id/btnNextDay"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreviousDay"
+        app:layout_constraintStart_toEndOf="@+id/btnToday"
+        app:layout_constraintTop_toTopOf="@+id/btnPreviousDay"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <Button
+        android:id="@+id/btnToday"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:text="today"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPreviousDay"
+        app:layout_constraintStart_toEndOf="@+id/btnPreviousDay"
+        app:layout_constraintTop_toTopOf="@+id/btnPreviousDay"
+        app:layout_constraintVertical_bias="0.51" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
